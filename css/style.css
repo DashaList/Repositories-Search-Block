@@ -1,0 +1,244 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type="submit"] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type=text] {
+  display: block;
+  border: 1px solid #c5d0db;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+input[type=text]:focus, input[type=text]:active {
+  border: 1px solid #4770ff;
+}
+
+input[type=submit] {
+  border-radius: 4px;
+  background-color: #e5ebf1;
+  padding: 7px;
+}
+
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-cyrillic_latin-300.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic_latin-300.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic_latin-regular.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic_latin-500.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-cyrillic_latin-700.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  background: #edeef0;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.block {
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 0 1px #dce1e6;
+          box-shadow: 0 0 0 1px #dce1e6;
+}
+
+.rep-search__form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.rep-search__form input[name=search] {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.rep-search__form input[name=search].error {
+  border: 1px solid red;
+  margin-bottom: 0;
+}
+
+.rep-search__form .search-line-error {
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.rep-search__field {
+  display: none;
+  margin-bottom: 25px;
+}
+
+.rep {
+  margin-bottom: 15px;
+}
+
+.rep__rep-name {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4770ff;
+  margin-bottom: 10px;
+}
+
+.rep__rep-name:hover {
+  color: #29439d;
+}
+
+.rep__description {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.rep__user-name {
+  margin-bottom: 10px;
+}
+
+.rep:last-of-type {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
